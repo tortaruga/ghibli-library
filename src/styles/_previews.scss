@@ -1,0 +1,41 @@
+.previews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4rem;
+    max-width: 80rem; 
+    margin: 5rem auto;
+}
+
+.preview-card {
+    max-width: 15rem;
+    min-width: 10rem;
+    border-radius: 1rem;
+    background-color: #FFD4D4;
+    color: #212121; 
+    padding-bottom: 1rem;
+    box-shadow: .4rem .3rem #FF8787;
+    transition: .4s;
+
+
+    &:hover {
+        box-shadow:  .2rem .1rem 0 #BCE29E ; 
+        
+    }
+
+    .text p {
+        font-size: 1rem;
+        text-decoration: none;
+        text-align: center;    
+        padding-inline: 1rem;    
+    }
+}
+
+.img-wrapper {
+    border-radius: 1rem 1rem 0 0;
+
+    img {
+        border-radius: inherit;
+    }
+}
+

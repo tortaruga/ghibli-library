@@ -1,0 +1,134 @@
+.detail-page{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background-color: whitesmoke;
+}
+
+.details-card {
+    width: 100vw;
+    height: 100vh;
+    background-color: #262424;
+    color: #FFD4D4;
+    max-width: 140rem; 
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 80vh;
+    box-shadow: .4rem .3rem 1rem #2624246f;
+
+    
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .img-wrapper {
+      border-radius: 0;
+      width: 55%;
+      clip-path: polygon(0 0, 99% 0, 79% 100%, 0% 100%);
+      position: relative;
+
+      &:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to right, rgba(255, 255, 255, 0.073), rgba(0, 0, 0, 0.495));
+    }
+  }
+}
+
+
+.info {
+    width: 45%;
+    text-align: end;
+    padding: 1rem;
+    margin-block: auto;
+    padding-right: 2rem;
+    
+    h1 {
+        margin-bottom: .5rem;
+        color: #FF8787;
+    }
+}
+
+.original-title {
+    font-size: 1rem;
+    font-weight: 500;
+    font-style: italic;
+    margin-top: 0;
+    color: #BCE29E;
+}
+
+.desc {
+    text-align: center;
+    margin-block: 3rem 1rem;
+    border-bottom: 2px dotted;
+    padding-bottom: 2rem;
+}
+
+.other-info {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: .85rem;
+    font-style: italic;
+
+    p {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-transform: uppercase;
+        color: #BCE29E;
+        font-weight: 600;
+
+        span {
+            text-transform: none;
+            color: #FF8787;
+            font-style: normal;
+            font-weight: 400;
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .detail-page {
+        padding: 0;
+    }
+
+    .details-card {
+        flex-direction: column; 
+        border-radius: 0;
+        width: 100vw;
+        background-color: #262424;
+        color: #FFD4D4;
+        min-height: 100vh;
+
+
+
+        .img-wrapper {
+            width: 100%;
+            clip-path: none; 
+            border-radius: 0;
+            position: relative;
+
+            &:before {
+                content:  '';
+                position: absolute;
+                width: 100%;
+                height:100%;
+                background: linear-gradient(to bottom, transparent, #262424);
+            }
+        }
+    }
+
+    .info {
+        width: 100%;
+        margin-top: 1rem;
+    }
+}

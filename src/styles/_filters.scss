@@ -1,0 +1,50 @@
+.browse {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+}
+
+.filter-toggle {
+    background-color: #e4e4e4;
+    border-radius: 3rem 5rem;
+    display: flex;
+    
+    
+    label {
+        position: relative;
+        height: 100%;
+        padding: .3rem 1rem;
+        border-radius: 3rem 5rem;
+        transition: .4s;
+        cursor: pointer;
+    }
+
+    label.selected {
+        background-color: #BCE29E;
+    }
+
+    input {
+        opacity: 0;
+        position: absolute;
+    }
+}
+
+.search-field {
+    text-align: center;
+    margin-block: 2rem 5rem;
+
+    input {
+        padding: .5rem 1rem;
+        border-radius: 3rem 5rem;
+        width: 80%;
+        border: .1rem solid #BCE29E;
+        text-align: center;
+        max-width: 50rem;
+        
+        &:focus-visible {
+            outline-color: #FF8787;
+        }
+    }
+}

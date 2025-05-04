@@ -1,0 +1,53 @@
+@import '_filters.scss';
+@import '_previews.scss';
+@import '_details.scss';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'inter', sans-serif; 
+    background: linear-gradient(to bottom, white, #ffd4d492 80%);
+    min-height: 100vh;
+}
+
+.home h1 {
+    text-align: center;
+    margin-block-end: 3rem;
+    color: #FFD4D4;
+    
+    span {
+        color: #BCE29E;
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+.intro {
+    text-align: center;
+    font-size: 1.2rem;
+    max-width: 40rem;
+    margin: auto;
+    color: #FF8787;
+    padding-inline: 1rem;
+
+    span {
+        color: #BCE29E;
+        font-weight: 700;
+    }
+}
+
+footer {
+    padding: 1rem;
+    text-align: center;
+    margin-block-start: 7rem;
+    font-size: .8rem;
+
+    a {
+        color: #FF8787; 
+    }
+}
