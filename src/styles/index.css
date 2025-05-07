@@ -175,7 +175,7 @@
     padding: 0;
   }
   .details-card {
-    flex-direction: column;
+    display: flex;
     border-radius: 0;
     width: 100vw;
     background-color: #262424;

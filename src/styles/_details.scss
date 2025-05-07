@@ -102,8 +102,8 @@
     }
 
     .details-card {
-        flex-direction: column; 
-        border-radius: 0;
+        display: flex;   
+        border-radius: 0; 
         width: 100vw;
         background-color: #262424;
         color: #FFD4D4;
