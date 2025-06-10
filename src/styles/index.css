@@ -88,14 +88,13 @@
 
 .details-card {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   background-color: #262424;
   color: #FFD4D4;
   max-width: 140rem;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
-  min-height: 80vh;
   box-shadow: 0.4rem 0.3rem 1rem rgba(38, 36, 36, 0.4352941176);
 }
 .details-card img {
